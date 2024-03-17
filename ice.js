@@ -122,7 +122,7 @@ function main() {
 
   // Asynchronously load an image
   var image = new Image();
-  image.src = "/cube.png";
+  image.src = "/cube2.png";
   image.addEventListener('load', function() {
     // Now that the image has loaded make copy it to the texture.
     gl.bindTexture(gl.TEXTURE_2D, texture);
@@ -134,7 +134,7 @@ function main() {
     return d * Math.PI / 180;
   }
 
-  var fieldOfViewRadians = degToRad(90);
+  var fieldOfViewRadians = degToRad(55);
   var modelXRotationRadians = degToRad(45);
   var modelYRotationRadians = degToRad(54.7356103);
   var rotationAngle = 0;

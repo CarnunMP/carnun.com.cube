@@ -1,11 +1,13 @@
-@import url("https://webgl2fundamentals.org/webgl/resources/webgl-tutorials.css");
+/*@import url("https://webgl2fundamentals.org/webgl/resources/webgl-tutorials.css");*/
 
 body {
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-canvas {
-  width: 90vw;
-  height: 90vh;
-  display: block;
+#c {
+  height: calc(100vh - 10rem);
 }
