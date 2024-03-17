@@ -159,7 +159,7 @@ function main() {
     gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
 
     // Animate the rotation
-    rotationAngle += -0.3 * deltaTime;
+    rotationAngle += -0.15 * deltaTime;
 
     // turn on depth testing
     gl.enable(gl.DEPTH_TEST);
@@ -179,7 +179,7 @@ function main() {
     var zFar = 2000;
     var projectionMatrix = m4.perspective(fieldOfViewRadians, aspect, zNear, zFar);
 
-    var cameraPosition = [1.5, 0, 1.5];
+    var cameraPosition = [1.5, 1, 1.5];
     var up = [0, 1, 0];
     var target = [0, 0, 0];
 
