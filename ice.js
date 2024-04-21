@@ -122,7 +122,7 @@ function main() {
 
   // Asynchronously load an image
   var image = new Image();
-  image.src = "/carnundotcube.png";
+  image.src = "carnundotcube.png";
   image.addEventListener('load', function() {
     // Now that the image has loaded make copy it to the texture.
     gl.bindTexture(gl.TEXTURE_2D, texture);
