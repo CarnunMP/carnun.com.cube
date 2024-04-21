@@ -115,9 +115,9 @@ function main() {
   // bind to the TEXTURE_2D bind point of texture unit 0
   gl.bindTexture(gl.TEXTURE_2D, texture);
 
-  // Fill the texture with a 1x1 blue pixel.
+  // Fill the texture with a 1x1 purple pixel (to match background colour)
   gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, 1, 1, 0, gl.RGBA, gl.UNSIGNED_BYTE,
-                new Uint8Array([0, 0, 255, 255]));
+                new Uint8Array([34, 32, 52, 255]));
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR);
 
   // Asynchronously load an image
